@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 3508px;
+}
+
+.flex {
+  display: flex;
+}
+
+.section-header {
+  border-bottom: 4px solid black;
+}
+
+.m-t-4 {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.title {
+  color: #1a1a1a;
+  padding-right: 10px;
+}
+
+.bold {
+  color: #008CFF;
+}
+
+
+.gray {
+  color: #6d6d6d;
+}
