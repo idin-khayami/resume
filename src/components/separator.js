@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const Separator = styled.hr`
-  border-top: dashed 1px 	#D3D3D3;
+const Separator = styled.div`
+  padding: 5px 0;
 `;
 
 export default Separator;

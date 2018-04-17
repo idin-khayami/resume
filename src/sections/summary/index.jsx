@@ -22,12 +22,9 @@ const Summary = () => {
       </h1>
       <Decription className="m-t-10">
         A {age} year old self-taught full-stack web developer with {workingYears}+ years of experience
-        using various cutting-edge technologies such as react, angular etc. to develop responsive
-        web applications, who is looking for a full-time position with an interest in developing
-        progressive web applications.
-        I always lived by writing. Its the most i do so i ll keep writing. I am in love with programming
-        but my major is civil engineering. Like those who love sth and do sth else totally. I have been
-        programming anywhere that i was accepted as one for years and today i do it more than anyone!
+        using various cutting-edge technologies such as react, angular etc.
+        I have been programming anywhere that i was accepted as one for years and today
+        i do it more than anyone!
       </Decription>
     </div>
   );

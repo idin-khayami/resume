@@ -12,9 +12,10 @@ const Column = style.div`
   flex-basis: 33%;
   padding:0 15px;
 `;
+
 const Title = style.h2`
   margin-bottom: 0;
-`
+`;
 const programmingSkills = [
   {title: 'HTML5 , CSS3, ES6', proficiency: 90},
   {title: 'React, Redux', proficiency: 80},
@@ -67,25 +68,22 @@ const Skill = () => (
       {programmingSkills.map(skill => (
         <Column>
           <SkillBar proficiency={skill.proficiency} title={skill.title}/>
-          <Separator className="m-t-20"/>
         </Column>
       ))}
     </Grid>
-    <Title>Database and Big Data Solution</Title>
+    {/* <Title>Database and Big Data Solution</Title>
     <Grid>
       {databaseSkills.map(skill => (
         <Column>
           <SkillBar proficiency={skill.proficiency} title={skill.title}/>
-          <Separator className="m-t-20"/>
         </Column>
       ))}
-    </Grid>
+    </Grid> */}
     <Title>Operating Systems</Title>
     <Grid>
       {operationSystemSkills.map(skill => (
         <Column>
           <SkillBar proficiency={skill.proficiency} title={skill.title}/>
-          <Separator className="m-t-20"/>
         </Column>
       ))}
     </Grid>
@@ -94,7 +92,6 @@ const Skill = () => (
       {softwareSkills.map(skill => (
         <Column>
           <SkillBar proficiency={skill.proficiency} title={skill.title}/>
-          <Separator className="m-t-20"/>
         </Column>
       ))}
     </Grid>
@@ -103,7 +100,6 @@ const Skill = () => (
       {methodologiSkills.map(skill => (
         <Column>
           <SkillBar proficiency={skill.proficiency} title={skill.title}/>
-          <Separator className="m-t-20"/>
         </Column>
       ))}
     </Grid>

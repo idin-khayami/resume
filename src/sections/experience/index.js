@@ -18,29 +18,15 @@ const Experience = () => (
       Experience Summary
     </h1>
     <Role>Full Stack Developer (at some point devops)</Role>
-    <strong className="title">Samsson</strong>
-    <div className="m-t-4">
+    <div>
+      <strong className="title">Samsson</strong>
       <FaCalendar/>  December 2017 - Now
-    </div>
-    <div className="m-t-10">
-      <List>
-        <li>Developed and managed for 3+ web applications using modern frameworks</li>
-        <li>Constantly improved tooling for a more reliable, automated and efficient development</li>
-        <li>Worked collaboratively with the clients to achieve satisfactory results on time and budget</li>
-      </List>
     </div>
 
     <Role>Full Stack Developer</Role>
-    <strong className="title">Miare</strong>
-    <div className="m-t-4">
+    <div>
+      <strong className="title">Miare</strong>
       <FaCalendar/>  May 2017 - January 2018
-    </div>
-    <div className="m-t-10">
-      <List>
-        <li>Developed and managed for 3+ web applications using modern frameworks</li>
-        <li>Constantly improved tooling for a more reliable, automated and efficient development</li>
-        <li>Worked collaboratively with the clients to achieve satisfactory results on time and budget</li>
-      </List>
     </div>
 
     <Role>Senior Frontend Developer</Role>

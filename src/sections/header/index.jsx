@@ -9,7 +9,7 @@ const Fullname = styled.h1`
 `;
 
 const Titleinfo = styled.h2 `
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 5px;
 `
 
@@ -53,7 +53,7 @@ const Header = () => (
     <Column className="flex">
       <span><FaUser/> Female, 26, Single</span>
       <span><FaMapMarker/> Tehran, Vanak</span>
-      <span><FaGlobe/> Iran</span>
+      {/* <span><FaGlobe/> Iran</span> */}
     </Column>
     <Titleinfo>Contact Info</Titleinfo>
     <Row className="flex m-t-12">
