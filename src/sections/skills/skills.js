@@ -1,19 +1,19 @@
 const backendSkills = {
-  python: { title: 'Python/Django', proficiency: 50 },
-  php: { title: 'PHP', proficiency: 50 },
-  golang: { title: 'Golang', proficiency: 50 },
+  python: { title: 'Python/Django', proficiency: 60 },
+  php: { title: 'PHP', proficiency: 40 },
+  golang: { title: 'Golang', proficiency: 10 },
   nodejs: { title: 'Node.js', proficiency: 50 }
 };
 
 const frontendSkills = {
-  react: { title: 'React', proficiency: 50 },
-  vue: { title: 'Vue', proficiency: 50 },
-  angular: { title: 'Angular 1 & 2+', proficiency: 50 },
-  gulp: { title: 'Gulp', proficiency: 50 },
-  sass: { title: 'Sass', proficiency: 50 },
+  react: { title: 'React', proficiency: 80 },
+  vue: { title: 'Vue', proficiency: 40 },
+  angular: { title: 'Angular 1 & 2+', proficiency: 60 },
+  gulp: { title: 'Gulp', proficiency: 85 },
+  sass: { title: 'Sass', proficiency: 90 },
   webpack: { title: 'Webpack', proficiency: 50 },
-  pug: { title: 'Pug', proficiency: 50 },
-  typescript: { title: 'Typescript', proficiency: 50 }
+  pug: { title: 'Pug', proficiency: 60 },
+  typescript: { title: 'Typescript', proficiency: 60 }
 };
 
 const MobileSkills = {
@@ -28,19 +28,19 @@ const DevopsSkills = {
     title: 'Ansible( Automation Configuration Tools)',
     proficiency: 50
   },
-  linux: { title: 'Linux Administration', proficiency: 50 },
+  linux: { title: 'Linux Administration', proficiency: 60 },
   monitoring: { title: 'Monitoring solution', proficiency: 50 }
 };
 
 const DatabaseSkills = {
-  mariadb: { title: 'Mariadb and mysql', proficiency: 50 },
+  mariadb: { title: 'Mariadb and mysql', proficiency: 40 },
   elasticsearch: { title: 'Elasticsearch', proficiency: 50 },
   redis: { title: 'Redis', proficiency: 50 }
 };
 
 const commonSkills = {
-  git: { title: 'Git', proficiency: 50 },
-  scrum: { title: 'Scrum', proficiency: 50 }
+  git: { title: 'Git', proficiency: 80 },
+  scrum: { title: 'Scrum', proficiency: 90 }
 };
 
 export const frontendSkillList = [

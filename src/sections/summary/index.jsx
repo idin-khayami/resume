@@ -6,7 +6,7 @@ const getFormattedWorkExprience = startDate => {
 };
 
 const isBackend = process.env.REACT_APP_POSITION === 'backend';
-const isFrontend = !isBackend;
+// const isFrontend = !isBackend;
 
 const technologies = isBackend
   ? 'Python, Golang, elasticsearch, redis, Docker, Ansible and Bash'

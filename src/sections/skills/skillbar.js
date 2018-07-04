@@ -1,14 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SkillBar = ({proficiency = 0, borderRadius = '5px', height = '10px', color = '#a6a6a6', title}) => {
+const SkillBar = ({
+  proficiency = 0,
+  borderRadius = '5px',
+  height = '10px',
+  color = '#000000',
+  title
+}) => {
   const Container = styled.div`
-    width: 100%;;
+    width: 100%;
     border-radius: ${borderRadius};
     background-color: #ddd;
   `;
 
-  const Bar = styled.div `
+  const Bar = styled.div`
     border-radius: ${borderRadius};
     height: ${height};
     background-color: ${color};
@@ -17,12 +23,14 @@ const SkillBar = ({proficiency = 0, borderRadius = '5px', height = '10px', color
 
   return (
     <div>
-      <p><strong className="title">{title}</strong></p>
+      <p>
+        <strong className="title">{title}</strong>
+      </p>
       <Container>
-        <Bar/>
+        <Bar />
       </Container>
     </div>
-  )
+  );
 };
 
 export default SkillBar;
