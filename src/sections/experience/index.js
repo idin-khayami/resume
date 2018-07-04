@@ -10,10 +10,10 @@ const Role = styled.p`
 const Experience = () => (
   <div>
     <h1>Experience Summary</h1>
-    <Role>Full Stack Developer (at some point devops)</Role>
+    <Role>Senior Frontend Developer</Role>
     <div>
-      <strong className="title">Samsson</strong>
-      <FaCalendar /> December 2017 - Now
+      <strong className="title">peeyade</strong>
+      <FaCalendar /> March 2018 - Now
     </div>
 
     <Role>Full Stack Developer</Role>

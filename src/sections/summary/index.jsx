@@ -1,33 +1,35 @@
 import React from 'react';
-import {differenceInCalendarYears} from 'date-fns';
-import styled from 'styled-components';
+import { differenceInCalendarYears } from 'date-fns';
 
-const getFormattedWorkExprience = (startDate) => {
-  const workingYears = differenceInCalendarYears(new Date(), startDate);
-  return workingYears
-}
+const getFormattedWorkExprience = startDate => {
+  return differenceInCalendarYears(new Date(), startDate);
+};
+
+const isBackend = process.env.REACT_APP_POSITION === 'backend';
+const isFrontend = !isBackend;
+
+const technologies = isBackend
+  ? 'Python, Golang, elasticsearch, redis, Docker, Ansible and Bash'
+  : 'react, angular, responsive';
+const interest = isBackend
+  ? 'scalable microservices'
+  : 'progressive web applications';
 
 const Summary = () => {
-  const age = differenceInCalendarYears(new Date(), new Date(1992, 11, 9));
-  const workingYears = getFormattedWorkExprience(new Date(2012, 11, 8));
-  const Decription = styled.p`
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-`;
+  const age = differenceInCalendarYears(new Date(), new Date(1992, 10, 8));
+  const workingYears = getFormattedWorkExprience(new Date(2013, 7, 1));
   return (
     <div>
-      <h1>
-        Summary
-      </h1>
-      <Decription className="m-t-10">
-        A {age} year old self-taught full-stack web developer with {workingYears}+ years of experience
-        using various cutting-edge technologies such as react, angular etc.
-        I have been programming anywhere that i was accepted as one for years and today
-        i do it more than anyone!
-      </Decription>
+      <h1 className="section-header">Summary</h1>
+      <p className="m-t-10">
+        A {age} year old self-taught devops with {workingYears}+ years of
+        experience using technologies such as {technologies} etc. to develop{' '}
+        {isBackend}
+        web applications, who is insterest in a position with an interest in
+        developing {interest}.
+      </p>
     </div>
   );
-}
+};
 
 export default Summary;
