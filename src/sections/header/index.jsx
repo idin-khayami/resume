@@ -31,6 +31,11 @@ const Row = styled.div`
     padding: 5px 0;
     font-size: 20px;
     font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    span {
+      margin 5px;
+    }
   }
   * {
     flex: 1;
@@ -41,7 +46,8 @@ const Column = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
-  margin-right: 10% span {
+  margin-right: 10%;
+  a, span {
     padding: 5px 0;
     font-size: 20px;
     font-weight: 500;
@@ -76,18 +82,18 @@ const Header = () => (
       <span>
         <FaSkype />Idin Khayami
       </span>
-      <span>
+      <a target="_blank" rel="noopener noreferrer"  href="http://bit.ly/2HhDIr7">
         <FaLinkedinSquare />
-        <a>bit.ly/2HhDIr7</a>
-      </span>
-      <span>
+        <span>bit.ly/2HhDIr7</span>
+      </a>
+      <a target="_blank" rel="noopener noreferrer" href="http://bit.ly/2GYnNP2">
         <FaGithub />
-        <a>bit.ly/2GYnNP2</a>
-      </span>
-      <span>
+        <span>bit.ly/2GYnNP2</span>
+      </a>
+      <a target="_blank" rel="noopener noreferrer" href="http://bit.ly/2GT8rr5">
         <FaStackOverflow />
-        <a>bit.ly/2GT8rr5</a>
-      </span>
+        <span>bit.ly/2GT8rr5</span>
+      </a>
     </Row>
   </div>
 );
