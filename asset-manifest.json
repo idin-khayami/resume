@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.9f2e87bb.chunk.css",
+    "main.js": "/resume/static/js/main.f067d9eb.chunk.js",
+    "main.js.map": "/resume/static/js/main.f067d9eb.chunk.js.map",
+    "runtime~main.js": "/resume/static/js/runtime~main.30522d0f.js",
+    "runtime~main.js.map": "/resume/static/js/runtime~main.30522d0f.js.map",
+    "static/js/2.a69ababd.chunk.js": "/resume/static/js/2.a69ababd.chunk.js",
+    "static/js/2.a69ababd.chunk.js.map": "/resume/static/js/2.a69ababd.chunk.js.map",
+    "index.html": "/resume/index.html",
+    "precache-manifest.1cd4b3607c00c50ec6715a3c17ad8553.js": "/resume/precache-manifest.1cd4b3607c00c50ec6715a3c17ad8553.js",
+    "service-worker.js": "/resume/service-worker.js",
+    "static/css/main.9f2e87bb.chunk.css.map": "/resume/static/css/main.9f2e87bb.chunk.css.map",
+    "static/media/letter-background.jpg": "/resume/static/media/letter-background.55702591.jpg"
+  }
+}
