@@ -6,8 +6,8 @@ import LetterBackground from './images/letter-background.jpg';
 
 const AppContainer = styled.div`
   background-image: url(${LetterBackground});
+  background-repeat-y: repeat;
   width: 100vw;
-  height: 100vh;
   padding: 32px
 `;
 

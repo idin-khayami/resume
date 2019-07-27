@@ -7,9 +7,10 @@ const backendSkills = {
 
 const frontendSkills = {
   react: { title: 'React', proficiency: 80 },
-  vue: { title: 'Vue', proficiency: 40 },
-  angular: { title: 'Angular 1 & 2+', proficiency: 60 },
-  gulp: { title: 'Gulp', proficiency: 85 },
+  redux: { title: 'Redux', proficiency: 60 },
+  vue: { title: 'Vue', proficiency: 30 },
+  angular: { title: 'Angular 1 & 2+', proficiency: 30 },
+  gulp: { title: 'Gulp', proficiency: 70 },
   sass: { title: 'Sass', proficiency: 90 },
   webpack: { title: 'Webpack', proficiency: 50 },
   pug: { title: 'Pug', proficiency: 60 },

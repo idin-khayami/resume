@@ -13,13 +13,13 @@ import {
 } from 'react-icons/lib/fa';
 
 const Fullname = styled.h1`
-  margin-top 0;
-  margin-bottom: 0;
+  margin-top 5px;
+  margin-bottom: 5px;
 `;
 
 const Titleinfo = styled.h2`
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 `;
 
 const Row = styled.div`
@@ -51,6 +51,8 @@ const Column = styled.div`
     padding: 5px 0;
     font-size: 20px;
     font-weight: 500;
+    text-decoration: none;
+    color: black;
   }
   * {
     flex: 1;
@@ -62,21 +64,25 @@ const Header = () => (
     <Fullname>Idin Khayami</Fullname>
     <Column className="flex">
       <span>
-        <FaPhone /> +989122339398
+        <a href="tel:+989122339398">
+          <FaPhone /> +989122339398
+        </a>
       </span>
       <span>
-        <FaEnvelope /> idin.khanoom.khayami@gmail.com
+        <a href="mailto:idin.khanoom.khayami@gmail.com">
+          <FaEnvelope /> idin.khanoom.khayami@gmail.com
+        </a>
       </span>
     </Column>
     <Titleinfo>Basic Info</Titleinfo>
-    <Column className="flex">
+    <Row className="flex">
       <span>
         <FaUser /> Female, 26, Single
       </span>
-      <span>
+      <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/32UnvjA">
         <FaMapMarker /> Tehran, Vanak
-      </span>
-    </Column>
+      </a>
+    </Row>
     <Titleinfo>Contact Info</Titleinfo>
     <Row className="flex m-t-12">
       <span>
