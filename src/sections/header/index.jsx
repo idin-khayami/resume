@@ -1,4 +1,5 @@
 import React from 'react';
+import { differenceInCalendarYears } from 'date-fns';
 
 import styled from 'styled-components';
 import {
@@ -59,49 +60,53 @@ const Column = styled.div`
   }
 `;
 
-const Header = () => (
-  <div>
-    <Fullname>Idin Khayami</Fullname>
-    <Column className="flex">
-      <span>
-        <a href="tel:+989122339398">
-          <FaPhone /> +989122339398
+const Header = () => {
+  const age = differenceInCalendarYears(new Date(), new Date(1992, 10, 8));
+
+  return (
+    <div>
+      <Fullname>Idin Khayami</Fullname>
+      <Column className="flex">
+        <span>
+          <a href="tel:+989122339398">
+            <FaPhone /> +989122339398
+          </a>
+        </span>
+        <span>
+          <a href="mailto:idin.khanoom.khayami@gmail.com">
+            <FaEnvelope /> idin.khanoom.khayami@gmail.com
+          </a>
+        </span>
+      </Column>
+      <Titleinfo>Basic Info</Titleinfo>
+      <Row className="flex">
+        <span>
+          <FaUser /> Female, {age} , Single
+        </span>
+        <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/32UnvjA">
+          <FaMapMarker /> Tehran, Vanak
         </a>
-      </span>
-      <span>
-        <a href="mailto:idin.khanoom.khayami@gmail.com">
-          <FaEnvelope /> idin.khanoom.khayami@gmail.com
+      </Row>
+      <Titleinfo>Contact Info</Titleinfo>
+      <Row className="flex m-t-12">
+        <span>
+          <FaSkype />Idin Khayami
+        </span>
+        <a target="_blank" rel="noopener noreferrer" href="http://bit.ly/2HhDIr7">
+          <FaLinkedinSquare />
+          <span>bit.ly/2HhDIr7</span>
         </a>
-      </span>
-    </Column>
-    <Titleinfo>Basic Info</Titleinfo>
-    <Row className="flex">
-      <span>
-        <FaUser /> Female, 26, Single
-      </span>
-      <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/32UnvjA">
-        <FaMapMarker /> Tehran, Vanak
-      </a>
-    </Row>
-    <Titleinfo>Contact Info</Titleinfo>
-    <Row className="flex m-t-12">
-      <span>
-        <FaSkype />Idin Khayami
-      </span>
-      <a target="_blank" rel="noopener noreferrer"  href="http://bit.ly/2HhDIr7">
-        <FaLinkedinSquare />
-        <span>bit.ly/2HhDIr7</span>
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="http://bit.ly/2GYnNP2">
-        <FaGithub />
-        <span>bit.ly/2GYnNP2</span>
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="http://bit.ly/2GT8rr5">
-        <FaStackOverflow />
-        <span>bit.ly/2GT8rr5</span>
-      </a>
-    </Row>
-  </div>
-);
+        <a target="_blank" rel="noopener noreferrer" href="http://bit.ly/2GYnNP2">
+          <FaGithub />
+          <span>bit.ly/2GYnNP2</span>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="http://bit.ly/2GT8rr5">
+          <FaStackOverflow />
+          <span>bit.ly/2GT8rr5</span>
+        </a>
+      </Row>
+    </div>
+  )
+};
 
 export default Header;
