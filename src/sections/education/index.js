@@ -26,6 +26,12 @@ const Education = () => (
 
     <Educationcontainer>
       <Info>
+        <Degree>Master Software Engineering</Degree>
+        <div className="m-t-4">
+          <FaCalendar/> October 2016- Feb 2019
+        </div>
+      </Info>
+      <Info>
         <Degree>Bachelore IT Engineering</Degree>
         <div className="m-t-4">
           <FaCalendar/> October 2011- June 2015
@@ -35,12 +41,6 @@ const Education = () => (
         <Degree>Bachelore Civil Engineering</Degree>
         <div className="m-t-4">
           <FaCalendar/> October 2011- July 2015
-        </div>
-      </Info>
-      <Info>
-        <Degree>Master Software Engineering</Degree>
-        <div className="m-t-4">
-          <FaCalendar/> October 2016- Now
         </div>
       </Info>
     </Educationcontainer>
